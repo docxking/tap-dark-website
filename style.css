@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: #0d0d0d;
+  color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.overlay {
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #e60073;
+  animation: pulse 2s infinite;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 3rem;
+  animation: fadeIn 2s ease-out;
+}
+
+.vengeance {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  border-radius: 10px;
+  animation: slideIn 2s ease-out;
+}
+
+.vengeance p {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+button#slapButton {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #e60073;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#slapButton:hover {
+  background-color: #ff3385;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
